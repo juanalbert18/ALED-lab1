@@ -130,7 +130,12 @@ public class EEGModel {
 	 * @throws IOException Thrown if the file can't be written.
 	 */
 	public void saveFile(String fileName) throws IOException {
+		File file = new File(fileName);
+		FileOutputStream fos = new FileOutputStream(file);
+		PrintStream out = new PrintStream(fos);
+		
 		// TODO
+		
 		
 	}
 
